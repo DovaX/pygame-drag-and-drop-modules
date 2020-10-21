@@ -14,12 +14,12 @@ screen.fill(bg_color)
 
 color=(200,200,200)
 
-class Label():
-    def __init__():
-myfont = pygame.font.SysFont("Cambria", 20)
-lbl = myfont.render("Start game", 20, bg_color)
-screen.blit(lbl, (120, 320))        
-
+class Label:
+    def __init__(self,text,color):
+        myfont = pygame.font.SysFont("Cambria", 20)
+        lbl = myfont.render(text, 20, color)
+        screen.blit(lbl, (120, 320))        
+        
 def refresh():
     screen.fill(bg_color)
     for i,rect in enumerate(rects):
